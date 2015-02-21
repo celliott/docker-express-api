@@ -1,0 +1,25 @@
+{
+  "name": "docker-express",
+  "version": "0.0.1",
+  "description": "docker rest api with query token auth based off rest-api-express by Azat Mardan",
+  "main": "app.js",
+  "scripts": {
+    "start": "node /app/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/celliott/docker-express.git"
+  },
+  "author": "Chris Elliott & Azat Mardan",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/celliott/docker-express/issues"
+  },
+  "dependencies": {
+    "body-parser": "1.9.2",
+    "express": "4.10.1",
+    "mongoskin": "1.4.4",
+	"morgan": "1.5.0",
+	"basic-auth": "1.0.0"
+  }
+}
