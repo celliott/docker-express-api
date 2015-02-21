@@ -1,5 +1,5 @@
 ###Express Server API
-This is a node express api backed by mongodb with basic auth that uses [mongodb](https://github.com/celliott/docker-mongodb) for the db.
+This is a node express api with basic auth that uses [mongodb](https://github.com/celliott/docker-mongodb) for the db.
 
 ##Runbook
 #####Set env varibles or edit entries in Makefile.
