@@ -4,8 +4,8 @@ This is a node express api backed by mongodb with basic auth that uses [mongodb]
 ##Runbook
 #####Set env varibles or edit entries in Makefile.
 
-	$ export AUTH_USER={auth_user}		# joe
-	$ export AUTH_PASS={auth_pass}		# 47ejheh7629
+	$ export AUTH_USER={auth_user}		# example joe
+	$ export AUTH_PASS={auth_pass}		# example 47ejheh7629
 	$ export MONGODB={mongodb}			# example 'mongodb://@172.17.42.1:27017/api'
 	
 
