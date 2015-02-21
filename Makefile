@@ -1,11 +1,12 @@
 # Makefile for docker-express
 
 # set token
-AUTH_TOKEN ?= '{set_token}'
 AUTH_USER ?= '{set_user}'
+AUTH_TOKEN ?= '{set_token}'
+MONGODB ?= 'mongodb://@172.17.42.1:27017/api'
 
 # docker settings
-ENVS = -e AUTH_TOKEN=$(AUTH_TOKEN) -e AUTH_USER=$(AUTH_USER)
+ENVS = -e AUTH_TOKEN=$(AUTH_TOKEN) -e AUTH_USER=$(AUTH_USER) -e MONGODB=$(MONGODB)
 PORTS = -p 80:3000
 CONTAINER = express
 VOLUMES =

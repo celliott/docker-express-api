@@ -5,9 +5,10 @@ var express = require('express'),
 	logger = require('morgan'),
 	auth_token = process.env["AUTH_TOKEN"],
 	auth_user = process.env["AUTH_USER"],
+	mongodb = process.env["MONGODB"],
 	app = express(),
 	basicAuth = require('basic-auth')
-	db = mongoskin.db('mongodb://@172.17.42.1:27017/api', {safe:true})
+	db = mongoskin.db(mongodb, {safe:true})
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
