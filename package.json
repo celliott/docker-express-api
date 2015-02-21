@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/celliott/docker-express.git"
+    "url": "https://github.com/celliott/docker-express-api.git"
   },
   "author": "Chris Elliott & Azat Mardan",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/celliott/docker-express/issues"
+    "url": "https://github.com/celliott/docker-express-api/issues"
   },
   "dependencies": {
     "body-parser": "1.9.2",
