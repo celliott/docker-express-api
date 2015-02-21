@@ -3,7 +3,7 @@ var express = require('express'),
 	mongoskin = require('mongoskin'),
 	bodyParser = require('body-parser'),
 	logger = require('morgan'),
-	auth_token = process.env["AUTH_TOKEN"],
+	auth_pass = process.env["AUTH_PASS"],
 	auth_user = process.env["AUTH_USER"],
 	mongodb = process.env["MONGODB"],
 	app = express(),
@@ -25,7 +25,7 @@ var auth = function (req, res, next) {
 	if (!user || !user.name || !user.pass) {
 		return unauthorized(res)
 	}
-	if (user.pass === auth_token) {
+	if (user.pass === auth_pass) {
 		return next()
 	} else {
 		return unauthorized(res)
